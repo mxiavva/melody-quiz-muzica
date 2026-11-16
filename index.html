@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Melody</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+
+<div id="titlu">
+  <h1>🎹Melody</h1>
+</div>
+ 
+<div id="scor">♬ Scor: 0</div>
+ 
+<div id="continut">
+<div id="mascota">🎹𝄂𝄚𝅦𝄚𝄞𝅄</div>
+<p>Pregătit să înveți notele muzicale?</p>
+</div>
+
+<button id="start">START JOC</button>
+</body>
+</html>
+
+let scor = 0;
+const butonStart = document.getElementById(“start”);
+const zonaScor = document.getElementById(“scor”);
+const zonaIntrebare = document.getElementById(“intrebare”);
+const zonaRaspunsuri = document.getElementById(“raspunsuri”);
+const zonaMesaj = document.getElementById(“mesaj”);
+const intrebare = {
+text: “Câte note muzicale există în alfabetul muzical?”,
+variante: [“5” , “7” , “12”],
+corect: 1 // 7
+};
+butonStart.addEventListener(“click” , function () {
+butonStart.style.display = “none”;
+afiseazaIntrebare();
+});
+function afiseazaIntrebare() {
+zonaIntrebare.textContent = intrebare.text;
+for (let i = 0; i &lt; intrebare.variante.length; i++) {
+const buton = document.createElement(“button”);
+buton.textContent = intrebare.variante[i];
+buton.addEventListener(“click”, function () {
+verifica(i);
+});
+zonaRaspunsuri.appendChild(buton);
+}
+}
+function verifica(alegere) {
+if (alegere === intrebare.corect) {
+scor = scor + 10;
+zonaMesaj.textContent = “Corect! +10 puncte”;
+} else {
+zonaMesaj.textContent = “Nu chiar. Răspunsul corect era: “ +
+intrebare.variante[intrebare.corect];
+}
+zonaScor.textContent = “⭐ Scor: “ + scor;
+}
+body {
+  background-color: #D3D3D3;  
+  font-family:Calibri, sans-serif;  
+  color: #2A2A2A;          
+  text-align: center;
+margin: 0;
+}
+ 
+#titlu {
+  font-family: Pacifico, sans-serif; 
+color: white;
+font-family: 'Trebuchet MS', sans-serif;
+padding: 20px;
+}
+#scor {
+padding: 14px;
+font-size: 20px;
+}
+#continut {
+background-color: white;
+border-radius: 16px;
+padding: 32px;
+margin: 16px auto;
+max-width: 420px;
+}
+#mascota {
+font-size:
+
+
+}
+ 
+#start {
+  background-color: #___;  
+  color: white;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+font-weight: bold;
+cursor: pointer;
+}
