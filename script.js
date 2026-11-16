@@ -100,6 +100,6 @@ function verifica(alegere, butonApasat) {
     butonApasat.style.borderColor = "#e74c3c";
   }
 
-  zonaScor.textContent = "⭐ Scor: " + scor;
+  zonaScor.textContent = "🎵 Scor: " + scor;
   butonUrmatorul.style.display = "inline-block";
 }
