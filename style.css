@@ -1,0 +1,76 @@
+body {
+  background-color: #D3D3D3;
+  font-family: Calibri, sans-serif;
+  color: #2A2A2A;
+  text-align: center;
+  margin: 0;
+}
+
+#titlu {
+  font-family: Pacifico, cursive, sans-serif;
+  color: #2A2A2A;
+  padding: 20px;
+}
+
+#scor {
+  padding: 14px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#continut {
+  background-color: white;
+  border-radius: 16px;
+  padding: 32px;
+  margin: 16px auto;
+  max-width: 420px;
+}
+
+#mascota {
+  font-size: 32px;
+}
+
+#numar-intrebare {
+  font-size: 14px;
+  color: #666666;
+}
+
+#intrebare {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+#start {
+  background-color: #A9A9A9;
+  color: white;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#raspunsuri button {
+  display: block;
+  width: 80%;
+  margin: 8px auto;
+  padding: 10px 24px;
+  background-color: white;
+  border: 2px solid #A9A9A9;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#urmatorul {
+  margin-top: 14px;
+  padding: 10px 22px;
+  background-color: #A9A9A9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
